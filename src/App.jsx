@@ -4,6 +4,7 @@ import MainLayout from "./layout/MainLayout";
 import About from "./page/About";
 import Home from "./page/Home";
 import Contact from "./page/Contact";
+import Product from "./components/Product";
 
 function App() {
   const routes = createBrowserRouter([
@@ -14,6 +15,7 @@ function App() {
         { index: true, element: <Home /> },
         { path: "/about", element: <About /> },
         { path: "/contact", element: <Contact /> },
+        { path: "/product/:id", element: <Product /> },
       ],
     },
   ]);
